@@ -25,6 +25,8 @@ export class HomePageComponent implements OnInit {
     this.loadTeams();
   }
 
+  onSubmit() {}
+
   loadTeams() {
     this.rapidApi.getTeamData().subscribe((res: any) => {
       this.teams = res.data;

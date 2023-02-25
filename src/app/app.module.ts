@@ -4,13 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './MyComponents/home-page/home-page.component';
-import { DetailPageComponent } from './MyComponents/detail-page/detail-page.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
-
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { DetailPageComponent } from './components/detail-page/detail-page.component';
 
 @NgModule({
   imports: [
@@ -19,14 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     RouterModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    DetailPageComponent 
-  ],
+  declarations: [AppComponent, HomePageComponent, DetailPageComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
